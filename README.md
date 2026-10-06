@@ -397,6 +397,3 @@ Better prompt =
 
 ---
 
-## License
-
-License: Not yet specified.
