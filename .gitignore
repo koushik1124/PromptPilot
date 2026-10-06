@@ -1,0 +1,53 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Pytest / tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# PromptPilot artifacts
+backend.zip
+*.zip
+
+# Node / Chrome extension
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Local environment/config
+*.local
