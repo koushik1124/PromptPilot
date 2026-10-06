@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "PromptPilot",
+  "version": "1.0.0",
+  "description": "AI prompt engineering and enhancement assistant.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "http://localhost:8000/*",
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "PromptPilot"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": [
+        "content/adapters/adapter-interface.js",
+        "content/adapters/chatgpt.js",
+        "content/content.js"
+      ],
+      "css": [
+        "content/styles.css"
+      ]
+    }
+  ]
+}

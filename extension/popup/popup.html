@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PromptPilot</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <div class="popup-container">
+    <header class="header">
+      <h1 class="title">PromptPilot</h1>
+      <span class="badge">v1.0</span>
+    </header>
+    <main class="content">
+      <div class="status-card">
+        <p class="status-text">Backend Status: <span id="backend-status" class="status-pill offline">Checking...</span>
+        </p>
+      </div>
+      <div class="action-group">
+        <label for="enhancement-mode" class="label">Enhancement Mode</label>
+        <select id="enhancement-mode" class="select-input">
+          <option value="auto">Auto (Recommended)</option>
+          <option value="detailed">Detailed & Structured</option>
+          <option value="concise">Concise & Direct</option>
+          <option value="creative">Creative & Exploratory</option>
+          <option value="code">Code & Engineering</option>
+        </select>
+        <p class="hint-text">A manual mode applies to your next enhancement only, then resets to Auto.</p>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Elevate your AI prompts seamlessly.</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
